@@ -1,0 +1,7 @@
+{
+  "path": "/usr/bin/protoc",
+  "options": [
+    "--proto_path=proto"
+  ]
+}
+

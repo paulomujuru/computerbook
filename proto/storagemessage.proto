@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package paulomujuru.computerbook;
+option go_package = ".;protobuf";
+import "memorymessage.proto";
+
+
+message Storage {
+  enum Driver {
+    UNKNOWN = 0;
+    HDD = 1;
+    SSD = 2;
+  }
+
+  Driver driver = 1;
+  Memory memory = 2;
+}
