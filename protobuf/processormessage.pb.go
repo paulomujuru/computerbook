@@ -24,7 +24,7 @@ type CPU struct {
 func (m *CPU) Reset()                    { *m = CPU{} }
 func (m *CPU) String() string            { return proto.CompactTextString(m) }
 func (*CPU) ProtoMessage()               {}
-func (*CPU) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
+func (*CPU) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
 
 func (m *CPU) GetBrand() string {
 	if m != nil {
@@ -79,7 +79,7 @@ type GPU struct {
 func (m *GPU) Reset()                    { *m = GPU{} }
 func (m *GPU) String() string            { return proto.CompactTextString(m) }
 func (*GPU) ProtoMessage()               {}
-func (*GPU) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
+func (*GPU) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{1} }
 
 func (m *GPU) GetBrand() string {
 	if m != nil {
@@ -121,9 +121,9 @@ func init() {
 	proto.RegisterType((*GPU)(nil), "paulomujuru.computerbook.GPU")
 }
 
-func init() { proto.RegisterFile("processormessage.proto", fileDescriptor2) }
+func init() { proto.RegisterFile("processormessage.proto", fileDescriptor3) }
 
-var fileDescriptor2 = []byte{
+var fileDescriptor3 = []byte{
 	// 265 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x94, 0x90, 0xb1, 0x4e, 0xc3, 0x30,
 	0x14, 0x45, 0x65, 0xd2, 0x06, 0xf1, 0xda, 0x32, 0x18, 0x04, 0x16, 0x53, 0xa8, 0x84, 0x94, 0x29,

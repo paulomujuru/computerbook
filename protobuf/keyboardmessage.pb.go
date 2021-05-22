@@ -6,6 +6,7 @@ Package __protobuf is a generated protocol buffer package.
 
 It is generated from these files:
 	keyboardmessage.proto
+	laptopmessage.proto
 	memorymessage.proto
 	processormessage.proto
 	screenmessage.proto
@@ -13,6 +14,7 @@ It is generated from these files:
 
 It has these top-level messages:
 	Keyboard
+	Laptop
 	Memory
 	CPU
 	GPU

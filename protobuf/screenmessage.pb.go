@@ -34,7 +34,7 @@ var Screen_Panel_value = map[string]int32{
 func (x Screen_Panel) String() string {
 	return proto.EnumName(Screen_Panel_name, int32(x))
 }
-func (Screen_Panel) EnumDescriptor() ([]byte, []int) { return fileDescriptor3, []int{0, 0} }
+func (Screen_Panel) EnumDescriptor() ([]byte, []int) { return fileDescriptor4, []int{0, 0} }
 
 type Screen struct {
 	SizeInch   float32            `protobuf:"fixed32,1,opt,name=size_inch,json=sizeInch" json:"size_inch,omitempty"`
@@ -46,7 +46,7 @@ type Screen struct {
 func (m *Screen) Reset()                    { *m = Screen{} }
 func (m *Screen) String() string            { return proto.CompactTextString(m) }
 func (*Screen) ProtoMessage()               {}
-func (*Screen) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
+func (*Screen) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
 
 func (m *Screen) GetSizeInch() float32 {
 	if m != nil {
@@ -84,7 +84,7 @@ type Screen_Resolution struct {
 func (m *Screen_Resolution) Reset()                    { *m = Screen_Resolution{} }
 func (m *Screen_Resolution) String() string            { return proto.CompactTextString(m) }
 func (*Screen_Resolution) ProtoMessage()               {}
-func (*Screen_Resolution) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0, 0} }
+func (*Screen_Resolution) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0, 0} }
 
 func (m *Screen_Resolution) GetWidth() uint32 {
 	if m != nil {
@@ -106,9 +106,9 @@ func init() {
 	proto.RegisterEnum("paulomujuru.computerbook.Screen_Panel", Screen_Panel_name, Screen_Panel_value)
 }
 
-func init() { proto.RegisterFile("screenmessage.proto", fileDescriptor3) }
+func init() { proto.RegisterFile("screenmessage.proto", fileDescriptor4) }
 
-var fileDescriptor3 = []byte{
+var fileDescriptor4 = []byte{
 	// 276 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x90, 0xc1, 0x4b, 0xc3, 0x30,
 	0x18, 0xc5, 0x4d, 0xb7, 0x76, 0xf5, 0x9b, 0x93, 0xf2, 0x29, 0x52, 0x14, 0xa4, 0xec, 0xa0, 0x05,

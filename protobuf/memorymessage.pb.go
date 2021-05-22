@@ -46,7 +46,7 @@ var Memory_Unit_value = map[string]int32{
 func (x Memory_Unit) String() string {
 	return proto.EnumName(Memory_Unit_name, int32(x))
 }
-func (Memory_Unit) EnumDescriptor() ([]byte, []int) { return fileDescriptor1, []int{0, 0} }
+func (Memory_Unit) EnumDescriptor() ([]byte, []int) { return fileDescriptor2, []int{0, 0} }
 
 type Memory struct {
 	Value uint64      `protobuf:"varint,1,opt,name=value" json:"value,omitempty"`
@@ -56,7 +56,7 @@ type Memory struct {
 func (m *Memory) Reset()                    { *m = Memory{} }
 func (m *Memory) String() string            { return proto.CompactTextString(m) }
 func (*Memory) ProtoMessage()               {}
-func (*Memory) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (*Memory) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 func (m *Memory) GetValue() uint64 {
 	if m != nil {
@@ -77,9 +77,9 @@ func init() {
 	proto.RegisterEnum("paulomujuru.computerbook.Memory_Unit", Memory_Unit_name, Memory_Unit_value)
 }
 
-func init() { proto.RegisterFile("memorymessage.proto", fileDescriptor1) }
+func init() { proto.RegisterFile("memorymessage.proto", fileDescriptor2) }
 
-var fileDescriptor1 = []byte{
+var fileDescriptor2 = []byte{
 	// 214 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0xce, 0x4d, 0xcd, 0xcd,
 	0x2f, 0xaa, 0xcc, 0x4d, 0x2d, 0x2e, 0x4e, 0x4c, 0x4f, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17,

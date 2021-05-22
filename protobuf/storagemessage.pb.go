@@ -34,7 +34,7 @@ var Storage_Driver_value = map[string]int32{
 func (x Storage_Driver) String() string {
 	return proto.EnumName(Storage_Driver_name, int32(x))
 }
-func (Storage_Driver) EnumDescriptor() ([]byte, []int) { return fileDescriptor4, []int{0, 0} }
+func (Storage_Driver) EnumDescriptor() ([]byte, []int) { return fileDescriptor5, []int{0, 0} }
 
 type Storage struct {
 	Driver Storage_Driver `protobuf:"varint,1,opt,name=driver,enum=paulomujuru.computerbook.Storage_Driver" json:"driver,omitempty"`
@@ -44,7 +44,7 @@ type Storage struct {
 func (m *Storage) Reset()                    { *m = Storage{} }
 func (m *Storage) String() string            { return proto.CompactTextString(m) }
 func (*Storage) ProtoMessage()               {}
-func (*Storage) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
+func (*Storage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
 
 func (m *Storage) GetDriver() Storage_Driver {
 	if m != nil {
@@ -65,9 +65,9 @@ func init() {
 	proto.RegisterEnum("paulomujuru.computerbook.Storage_Driver", Storage_Driver_name, Storage_Driver_value)
 }
 
-func init() { proto.RegisterFile("storagemessage.proto", fileDescriptor4) }
+func init() { proto.RegisterFile("storagemessage.proto", fileDescriptor5) }
 
-var fileDescriptor4 = []byte{
+var fileDescriptor5 = []byte{
 	// 195 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x29, 0x2e, 0xc9, 0x2f,
 	0x4a, 0x4c, 0x4f, 0xcd, 0x4d, 0x2d, 0x2e, 0x4e, 0x4c, 0x4f, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9,
